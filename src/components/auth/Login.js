@@ -16,7 +16,7 @@ const Login = () => {
         setPasswordError('')
         console.log(name, email, password)
         try {
-            const res = await fetch('http://localhost:5000/login', {
+            const res = await fetch('https://myapplication19.herokuapp.com/login', {
                 method: 'POST',
                 credentials: 'include',
                 body: JSON.stringify({ name, email, password }),
